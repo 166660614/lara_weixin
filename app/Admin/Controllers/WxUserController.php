@@ -91,7 +91,7 @@ class WxUserController extends Controller
             }elseif($sex==2){
                 return '女';
             }else{
-                return '未知';
+                return '未知a1';
             }
         });
         return $grid;
