@@ -19,3 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/weixin/valid', 'UserController@valid');
+Route::get('/weixin/api', 'Api\ApiController@test');
+
+Route::get('/weixin/menu', 'Weixin\WeixinController@viewMenu');
+Route::post('/weixin/passmenu', 'Weixin\WeixinController@passMenu');
