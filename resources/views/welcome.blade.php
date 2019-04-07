@@ -76,7 +76,7 @@
                             {{--<a href="{{ route('register') }}">Register</a>--}}
                         {{--@endif--}}
                     {{--@endauth--}}
-                    <a href="http://passport.52self.cn/u/login">登录</a>
+                    <a href="http://passport.52self.cn/u/login?redirect_url="{{$redirect_url}}>登录</a>
                     <a href="http://passport.52self.cn/u/register">注册</a>
                 </div>
             {{--@endif--}}

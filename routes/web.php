@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
 Auth::routes();
 
@@ -23,3 +23,5 @@ Route::get('/weixin/api', 'Api\ApiController@test');
 
 Route::get('/weixin/menu', 'Weixin\WeixinController@viewMenu');
 Route::post('/weixin/passmenu', 'Weixin\WeixinController@passMenu');
+
+Route::get('/','Weixin\WeixinController@index');

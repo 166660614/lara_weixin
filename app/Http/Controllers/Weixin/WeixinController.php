@@ -14,4 +14,14 @@ class WeixinController extends Controller
         $fname=$request->input();
         print_r($fname);exit;
     }
+//    public function index(){
+//        $redirect_url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+//        $data=[
+//            'redirect_url'=>urlencode($redirect_url),
+//        ];
+//        return view('welcome',$data);
+//    }
+    public function index(){
+        return view('test');
+    }
 }
